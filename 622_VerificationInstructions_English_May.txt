@@ -1,0 +1,81 @@
+
+LOCATION OF THE MAY VERIFICATION KIT:
+
+With Support Contract ID or Customer Log In and appropriate password, 
+access the following files at  http://support.concord.com/support/secure/certkits/ :
+
+May_Verification     (- eHealth 6.2.2 README file; 
+                           eHealth version and platform specific 
+                           certification test kits 
+			 - List of agents or traps supported/added with instructions 
+                           specific to Cert ID; Patch dependency
+                         - Instructions to test support provided)
+
+------------------------------------------------------------------------
+VERIFICATION INSTRUCTIONS
+
+IMPORTANT: It is recommended that customers install the December Verification kit 
+           in their lab system but NOT in their production network. 
+
+
+Refer to the SupportSpecifications file for instructions specific to Cert ID.
+
+- As of December 2010 a 1 step installation is used. All customers (except customers using Japanese or French eHealth) will install
+  the Certification Bundled Kit which includes both strategic patch and certification kit.
+
+
+Setp1. To install the Verification Kit:
+
+	Download the kit in May_Verification folder
+
+	- For eHealth 6.2.2 Windows download 
+
+	    EH_WIN_622_D12_BUNDLE.ZIP         
+
+	- For eHealth 6.2.2 UNIX download 
+
+	    EH_UNX_622_D12_BUNDLE.ZIP 
+
+Step2. To test the Verification Kit:
+
+	- DEVICE CERTIFICATION TEST INSTRUCTION:
+
+	  a) Once you've installed the May_Verification test kit, 
+	     re-discover and confirm that all agent types listed  are present.  
+	     Poll for  at least 2-4 hours and run an At-a-Glance report for 
+	     each sample set of elements.
+
+	  b) Review the results to confirm that the data is what you expect 
+
+	- TRAP CERTIFICATION TEST INSTRUCTION:
+
+	  a) Configure your  Live Exceptions Browser to appropriate 
+	     Live Exceptions profiles (refer to Cert ID in SupportSpecifications file).  
+
+	  b) Once you've installed the new certification release, 
+	     configure your Live Exceptions Browser to appropriate 
+	     Live Exceptions profiles.  Trigger a couple traps and make sure the alarms 
+	     display in Live Exception Browser.
+
+Step3. Confirm data and submit testing result.
+       Review the results to confirm that the data is what you expect and submit testing result.
+       
+       - For DEVICE CERTIFICATION
+         Submit a copy of AAG reports for review if the verification was successful. 
+
+       - For TRAP CERTIFICATION
+         Just send us email to notice the verification was successful.
+
+CONTACT INFO:
+If you encounter problems and need urgent direct assistance, please contact your CA Sales territory engineer. 
+
+Please send your emails with reference to the Call Ticket and Cert ID at TechnicalSupport@ca.com 
+and/or by telephone: 1-888-832-4340 (US) 8AM to 8PM EST 
+                    +1.508.628.8900 (International) 8AM to 8PM EST.
+
+PLEASE COMPLETE ALL VERIFICATION TESTING ASAP. 
+Your test results are required to enable us to post the device as certified in the 
+official certification release of eHealth 6.2.2 D12.
+
+Thank you very much for verifying this support!
+
