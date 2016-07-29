@@ -30,11 +30,11 @@ Setp1. To install the Verification Kit:
 
 	- For eHealth 6.2.2 Windows download 
 
-	    EH_WIN_622_D12_BUNDLE.ZIP         
+	    EH_WIN_622_D16_BUNDLE.ZIP         
 
 	- For eHealth 6.2.2 UNIX download 
 
-	    EH_UNX_622_D12_BUNDLE.ZIP 
+	    EH_UNX_622_D16_BUNDLE.ZIP 
 
 Step2. To test the Verification Kit:
 
