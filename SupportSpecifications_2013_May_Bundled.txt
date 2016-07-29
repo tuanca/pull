@@ -1,0 +1,2975 @@
+May 2013 VERIFICATIONS
+=============================================================================
+
+########################################################################################
+174683	Certify NetApp Release 8.1
+LIST OF AGENTS SUPPORTED:
+
+LIST OF AGENTS TO BE ADDED:
+Network Appliance Server RAID Disk (MultiVolume)
+NetApp Server Storage (user partition, 64 bit) w/InodeUtil
+
+DISCOVER MODE:
+System
+
+Environment Variable:
+None
+
+AAG Report Technology:
+System
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- The new agents are planned for the May Verification Kit.
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+159221	H3CS7502E Device certification
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201
+Huawei Environment Sensor Temperature
+Huawei Environment Sensor Voltage
+Huawei AR46XX CPU with Mem
+MIB2 (lan port)
+MIB2 VLAN (lan port)
+MIB2 (wan port)
+
+LIST OF AGENTS TO BE ADDED:
+None
+
+DISCOVER MODE:
+Router/Switch&Lan/Wan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Router/Switch&Lan/Wan
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- Temperature and power supply statistics have been certified in agent ""Huawei Environment Sensor Temperature"" and ""Huawei Environment Sensor Voltage"".
+- CPU & Memory statistics have been certified in agent Huawei AR46XX CPU with Mem
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+########################################################################################
+193947	Gaps in Trend Reports - Linux RedHat 5.8 - 21357787
+LIST OF AGENTS SUPPORTED:
+SystemEDGE Server Disk Storage (64-bit)
+SystemEDGE and Host Resources Storage (UNIX system partition)
+SystemEDGE and Host Resources Storage (UNIX user partition)
+SystemEDGE Server Processor (LINUX)
+SystemEDGE Linux Server (w/QLen)
+Empire Wan Interface
+IP System Stats
+IP System IPv4 Stats no octets (v1)
+IP System IPv6 Stats no octets (v1)
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+System
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+System
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+The agent ""Empire Wan Interface"" will be changed to fix the problem.
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+142604	Enterasys Networks, Inc. S8 Chassis Rev 07.21.02.0002 05/18/2011--15:49 ofc - 21177696
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201 (v2c)
+MIB2 (wan port) with 64 bit counters, v2c
+MIB2 WAN (v1/HighSpeed) errors, octets, unknown only (v2c)
+MIB2 full duplex Ethernet w/DOT3 /v2c
+MIB2 WAN (v2c/HighSpeed/>640M)
+MIB2 (wan port)/v2c
+
+LIST OF AGENTS TO BE ADDED:
+Enterasys Secure Stack Switch CPU (only memory) (v2c)
+Enterasys Secure Stack Switch CPU (utilization) (v2c)
+
+DISCOVERY MODE:
+Lan/Wan
+Router/Switch
+
+ENVIRONMENT VARIABLE:
+set evironment variable NH_DISCOVER_SNMPv2c_ONLY to yes
+
+AAG REPORT TECHNOLOGY:
+Lan/Wan
+Router/Switch
+
+COMMENTS:
+-Certify new CPU to fix the issue
+-We have certify the CPU for new devices and fix the bad polls, but the mibdump of SW01SPDC02 device does not have stats of CPU.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+183412	request certuification for routerportname tmnxPortName and chassis/card
+LIST OF AGENTS SUPPORTED:
+Timetra MPLS Interface
+Timetra MIB2 (lan port) v2c
+Timetra MIB2 (lan port)
+MIB2 WAN (v2c/HighSpeed/>640M)
+Alcatel 7x50 QoS Network Port Queue In
+Alcatel 7x50 QoS Network Port Queue Out
+Generic Router/Switch Data
+Timetra CPU
+Timetra DDM Environment Sensor (Optical Power)
+Timetra Environment (Fan)
+Timetra Environment (Power Supply) 1
+Timetra Environment (Power Supply) 2
+Timetra Environment (Temperature)
+Timetra Environment (Temperature Celsius)
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All mode
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+We have been added the portName into element name as you mentioned.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+160549	re-certification Infoblox IBL-250a, IBL-550a, IBL-1050a, IBL-1552a, IBL-2000a
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data
+Infoblox AppSvc - DHCP
+Infoblox AppSvc - DNS
+Infoblox AppSvc - Zone
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+MIB2 (wan port) with 64 bit counters, v2c
+UC Davis Server Processor
+UC Davis Server
+
+LIST OF AGENTS TO BE ADDED:
+Infoblox AppSvc - Zone change into Infoblox AppSvc - Zone (with Full Statistics)
+
+DISCOVER MODE:
+Application
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Application
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- We will change the agent ""Infoblox AppSvc - Zone"" into ""Infoblox AppSvc - Zone (with Full Statistics)"" to fix the problem.
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+146910	Certify Alcatel-Lucent 7450 Ethernet Service Switch
+LIST OF AGENTS SUPPORTED:
+Timetra MPLS Interface
+Timetra Environment (Temperature Celsius)
+Timetra MIB2 (lan port) v2c
+Timetra Environment (Temperature)
+MIB2 (wan port) with 64 bit counters, v2c
+Timetra Environment (Power Supply) 1
+MIB2 WAN (v2c/HighSpeed/>20M)
+Timetra CPU
+Timetra Environment (Power Supply) 2
+MIB2 WAN (v2c/HighSpeed/>640M)
+Timetra Environment (Fan)
+Generic Router/Switch Data
+Timetra DDM Environment Sensor (Optical Power)
+
+LIST OF AGENTS TO BE ADDED: 
+Timetra MPLS LSP Forwarding Class 2
+Timetra MPLS LSP Forwarding Class 1
+Timetra MPLS LSP Forwarding Class 6
+Timetra MPLS LSP Forwarding Class 7
+Timetra MPLS LSP Forwarding Class 3
+Timetra MPLS LSP Forwarding Class 4
+Timetra MPLS LSP Forwarding Class 0
+Timetra MPLS LSP Forwarding Class 5
+
+DISCOVERY MODE:
+All  ( except QoS)
+
+ENVIRONMENT VARIABLE: 
+None 
+
+AAG REPORT TECHNOLOGY: 
+
+COMMENTS:
+-  Added support for an individual Timetra MPLS LSP Forwarding Class
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+########################################################################################
+185618	Cisco ICMP-Jitter operation test support 
+LIST OF AGENTS SUPPORTED:
+Response Destination  
+Response Source  
+Response Path - PreCreated (Cisco RttMon ICMP Jitter App)
+
+LIST OF AGENTS TO BE ADDED:
+Add support for Cisco ICMP-Jitter operation test, using managed test.
+
+DISCOVER MODE:
+Response
+
+Environment Variable:
+
+AAG Report Technology:
+Response
+
+COMMENTS:
+With the new support, there will be a new protocol ""ICMP Jitter, Cisco RTTMON ICMP"" when you add paths using Path/PVC Manager.
+
+This new support is planned for the May Verification Kit.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+157977	NAT pool usage on Juniper firewalls
+LIST OF AGENTS SUPPORTED:
+Juniper (wan port)
+Juniper (lan port) with 64 bit counters, ifHighSpeed, v2c
+Juniper (wan port) with 64 bit counters, ifHighSpeed, v2c
+
+LIST OF AGENTS TO BE ADDED:
+Juniper Nat Pool
+Juniper Nat Rule
+Juniper Source Nat Stats
+
+.1.1.4 jnxJsSrcNatStatsTable 
+jnxJsNatSrcPoolName (1.1.4.1.1)          
+jnxJsNATSrcNumSession (.1.1.4.1.6)         
+
+.1.1.5 jnxJsNatRuleTable 
+jnxJsNatRuleName (1.1.5.1.1)             
+jnxJsNatRuleHits (.1.1.5.1.4)            
+
+.1.1.6 jnsJsNatPoolTable 
+jnxJsNatPoolName (.1.1.6.1.1)              
+jnxJsNatPoolHits (.1.1.6.1.1.4)           
+
+DISCOVER MODE:
+Lan/Wan
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- The new agents are planned for the May Verification Kit.
+- The status of  jnxJsNatPoolTransHits (.1.1.5.1.3)  is deprecated, it should be avoided, typically because of being superseded by jnxJsNatRuleHits (.1.1.5.1.4)  .
+- The status of jnxJsNatPoolTransHits (.1.1.6.1.3)    is deprecated, it should be avoided, typically because of being superseded by jnxJsNatPoolHits (.1.1.6.1.1.4)  .
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+182720	CISCO ASR1002, Unable to discover temperature related interfaces
+LIST OF AGENTS SUPPORTED:
+Cisco Router General Data Type 201
+Cisco Environmental Sensor - Current
+Cisco Environmental Sensor - Temperature
+Cisco Environmental Sensor - AC Voltage
+Cisco Environmental Sensor - DC Voltage
+Cisco Router/Switch CPU
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MPLS Tunnel Summary
+
+LIST OF AGENTS TO BE ADDED:
+None
+
+DISCOVER MODE:
+Router/Switch & Lan/Wan
+
+ENVIRONMENT VARIABLE:
+""NH_DISCOVER_CISCO_SENSOR"" = Yes
+
+AAG REPORT TECHNOLOGY:
+Router/Switch & Lan/Wan
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- Temperature statistics have been certified in agent Cisco Environmental Sensor - Temperature
+- You need to set environment variable ""NH_DISCOVER_CISCO_SENSOR"" to Yes for monitoring Temperature statistics . 
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+########################################################################################
+164968	Certification of JVM 
+LIST OF AGENTS SUPPORTED:
+UC Davis Server (w/interrupt)
+UC Davis Disk IO
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+Generic Router/Switch Data
+Host Res Server Storage (user partition, no alloc failures)
+Host Resources Server Processor (no device status)
+
+LIST OF AGENTS TO BE ADDED: 
+JVM Memory Pool
+
+DISCOVERY MODE:
+All  (Router)
+
+ENVIRONMENT VARIABLE: 
+None 
+
+AAG REPORT TECHNOLOGY: 
+
+COMMENTS:
+-  Added support for JVM Memory Pool
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+########################################################################################
+115032	New Cert For Newtec El170
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data
+Newtec Demodulator Statistics
+Newtec Internal Temperatures
+Newtec Modulator Output Level
+Newtec Interfaces
+
+LIST OF AGENTS TO BE ADDED:
+Newtec Interfaces changed to Newtec Interfaces new
+Remove: Newtec Demodulator Statistics
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+According to mibdump, There are some variable have not value in this device, for example:
+ntcDevsMod01DmMeasAGC .1.3.6.1.4.1.5835.3.1.13.1.15.1.1 OctetString [ERROR]
+ntcDevsMod01DmMeasAGCCo .1.3.6.1.4.1.5835.3.1.13.1.16.1.1 OctetString [ERROR]
+ntcDevsMod01DmMeasEsNo .1.3.6.1.4.1.5835.3.1.13.1.48.1.1 OctetString [NOT APPLICABLE]
+ntcDevsMod01IfBBRXEstimFrameRate .1.3.6.1.4.1.5835.3.1.4.1.174.1.1 OctetString [NOT APPLICABLE]
+...
+That is the result why have bad poll and report can't show. To fix this issue, we will remove 1 element: ""none-5000-RH-newtec-demodulator-stats-ERROR"" that haven't statistics and change 1 element type ""Newtec Interfaces"" to ""Newtec Interfaces new"". After remove the element, and discover done, appear 1 missing element: ""none-5000-RH-newtec-demodulator-stats-ERROR"". Please retire it.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+190599	Ucs C210 Vmwareesxi
+LIST OF AGENTS SUPPORTED:
+MIB2 (lan port) no out discards
+VMware Server
+
+LIST OF AGENTS TO BE ADDED:
+None
+
+DISCOVER MODE:
+System
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+System
+
+COMMENTS:
+- Statistic vmwMemSize is certified as Total Physical Memory, statistic vmwMemAvail is certified as Physical Memory Used (vmwMemSize - vmwMemAvail) in agent VMware Server
+
+- Statistics vmwVmState and vmwVmGuestState have syntax as DisplayString, so we don't certify them.
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+191917	Cisco Systems ASR 5xxx series of multimedia core platforms (ASR 5000, ASR 5500)
+LIST OF AGENTS SUPPORTED:
+Starent A11
+Starent FA
+Starent HA
+Starent PDSN
+Starent Session
+Starent AAA (5.2+)
+Starent Chassis (5.2+)
+Starent CPU (7.0+)
+Starent IP POOL (5.2+)
+Starent Port (5.2+)
+Starent Slot (7.0+)
+
+LIST OF AGENTS TO BE ADDED:
+Starent IP POOL Group
+
+DISCOVER MODE:
+MobileWireless
+
+Environment Variable:
+
+AAG Report Technology:
+MobileWireless
+
+COMMENTS:
+You request us certify Cisco Systems ASR 5xxx series of multimedia core platforms (ASR 5000,  ASR 5500).
+
+According to the MIB files and Mibdump, we add new agent: Starent IP POOL Group
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+159954	Trap Cert for new clustered storage devices
+LIST OF SUPPORTED TRAPS:
+
+TRAPS LIST OF TRAPS TO BE ADDED:
+nodeStatusCrit
+nodeExpStatusCrit
+nodeShutdownInfo
+nodeRebootCoalescedInfo
+nodeStatusCoalescingCrit
+partitionUsageInfo
+partitionUsageWarn
+partitionUsageCrit
+clusterStorageUsageWarn
+clusterStorageUsageCrit
+filesysErrorInfo
+filesysErrorWarn
+filesysErrorCrit
+diskPoolUsageWarn
+diskPoolUsageCrit
+filesysCoalesceCrit
+filesysCoalesceWarn
+FlexProtectRunningInfo
+FlexProtectRunningWarn
+clockSkewCrit
+netStatusWarn
+netStatusCrit
+hardwareErrorInfo
+hardwareErrorWarn
+hardwareErrorCrit
+hardwareCoalescedEmerg
+hardwareCoalescedCrit
+hardwareCoalescedWarn
+sasPhyErrorCrit
+driveStatusWarn
+driveStatusCrit
+diskErrorCoalescedCrit
+hwFanWarn
+hwTempOverEmerg
+hwTempOverCrit
+hwPowerCrit
+hwPowerWarn
+hwMemCrit
+sensorCoalescedEmerg
+sensorCoalescedCrit
+sensorCoalescedWarn
+fanCoalescedEmerg
+fanCoalescedCrit
+fanCoalescedWarn
+tempCoalescedEmerg
+tempCoalescedCrit
+tempCoalescedWarn
+voltsCoalescedEmerg
+voltsCoalescedCrit
+voltsCoalescedWarn
+hwCurrentOverEmerg
+hwCurrentOverCrit
+storageTransportCoalescedEmerg
+storageCoalescedCrit
+storageCoalescedWarn
+
+COMMENTS: 
+- All incorrect description will be fixed.
+
+CUSTOMER'S NEXT STEP:
+Please review our analysis above as we will be implementing the certification accordingly. If you have any questions or concerns, please send them to Team-IM-eHealthCertQueries@ca.com 
+
+########################################################################################
+180322	F5 BIG IP - 6800 Memory Accounting
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 BigIP Global Host CPU (5Min)
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 BigIP Pool Member Stat Pva
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 BigIP Virtual Server Entity
+F5 BigIP Pool Member Stat Server
+F5 (lan port)
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP APM Profile Connectivity Stat
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual TCP Stat Connections
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- sysStatMemoryTotal (1.3.6.1.4.1.3375.2.1.1.2.1.44) and sysStatMemoryUsed (1.3.6.1.4.1.3375.2.1.1.2.1.45) stats have been certified in agent ""F5 BigIP TMM CPU v9"".
+- sysTmmStatMemoryTotal (1.3.6.1.4.1.3375.2.1.8.2.3.1.31) and sysTmmStatMemoryUsed (1.3.6.1.4.1.3375.2.1.8.2.3.1.32) stats have been certified in agent ""F5 BigIP TMM CPU Stats"".
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+148287	Certification of Cisco CRS-16/S running IOS XR Software (Cisco CRS-16/S), Version 4.1.2
+LIST OF AGENTS SUPPORTED:
+Cisco EXT MIB2 ifVHCPacketGroup all (HighSpeed)
+MIB2 (wan port) no multicast
+IP Router Stats
+Cisco Flash Server
+Response Source
+Vlan SubInterface (HS), no HC Data
+Cisco EXT MIB2 ifVHCPacketGroup all
+Vlan SubInterface
+Cisco Router General Data Type 201
+IP Router IPv4 Stats, v1 (no Multicast Octets)
+Cisco Entity Sensor(Temperature)
+MIB2 WAN (v2c/HighSpeed/>640M)
+SONET/SDH Line (rfc2558)
+Cisco Enhanced Memory Pool, 64 bit counters
+IP Router IPv6 Stats, v1
+MIB2 SubInterface (v2c), ifHighSpeed
+SONET/SDH Section (rfc2558)
+Cisco Router CPU
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:  NH_CISCO_QOS_NO_OVERRIDE_SPEED should be set to NO
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+1. Fixed bad polls:
+received an SNMP error (the request referenced an incorrect community or index, or an unsupported MIB) (Variable not found is ifInUcastPkts)
+
+2. Fixed QoS speed issue. Now it assigns 10G instead of 4.3G. 
+NH_CISCO_QOS_NO_OVERRIDE_SPEED should be set to NO
+
+3. Problem with wrong Interface type is not reproducible with any of the mib dumps provided.
+However,several mib dumps from different customers were discovered elements with cisco-tcp-active-opens.mtf, and with the latest code Interface type assigned to these elements is “SIPConnection App Svc” which is correct. 
+At this point my recommendation is to upgrade to the latest code (March verification kit) and test again, if the problem still persists, please, submit a defect on this issue.
+Fixed wrong Interface type in may verification kit
+Interface type ""6"" for the the element
+CRS-LCR2-MgmtEth0/RP0/CPU0/0 will be updated as tcpStats
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+
+########################################################################################
+182611	CERTIFY F5 BIG-IP 1500 9.2.3
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data
+MIB2 (lan port, bytes packets & errors only)
+UC Davis Server Processor
+UC Davis Server  w/Load Average (no host resources)
+UC Davis Server Storage (user partition
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+- According to the list of agents supported above, it seems that this device is fully certified.Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- Regarding to CPU's reports you can run trend report on elements which has element type is  System CPU .
+- Regarding to memory's reports you can run trend report on elements which has element type is System.
+- Regarding to disk's reports you can run trend report on elements which has element type is  Disk Partition.
+- Regarding to network 's reports you can run trend report on elements which has element type is  Lan/Wan.
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+########################################################################################
+147187	Certify Alcatel-Lucent 7950 router
+LIST OF AGENTS SUPPORTED:
+Timetra Environment (Temperature Celsius)
+Alcatel 7x50 QoS SAP Pchip (No Uncolored Packet)
+Timetra MIB2 (lan port) v2c
+Alcatel 7x50 MDA QoS Drop
+Timetra Environment (Temperature)
+Alcatel 7x50 QoS SAP (No Uncolored Packet)
+MIB2 (wan port) with 64 bit counters, v2c
+Timetra Environment (Power Supply) 1
+Alcatel 7x50 QoS Sap Queue In (No Uncolored Packet)
+Timetra Environment (Power Supply) 2
+Timetra CPU
+Alcatel 7x50 QoS SAP Qchip Out
+MIB2 WAN (v2c/HighSpeed/>640M)
+Timetra Environment (Fan)
+Alcatel 7x50 QoS SAP Qchip In
+Alcatel 7x50 QoS Network Port Queue In
+Generic Router/Switch Data
+Timetra DDM Environment Sensor (Optical Power)
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+
+########################################################################################
+180184	Certification of Transmode Chassis 3000 required
+LIST OF AGENTS SUPPORTED:
+MIB2 (wan port) no multicast, unknown, lastchange
+
+LIST OF AGENTS TO BE ADDED:
+Lumentis Port Utilization
+MIB2 (lan port) no unknown lastchange nucast
+
+DISCOVER MODE:
+Lan/Wan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Lan/Wan
+
+COMMENTS:
+- we have certified mesPortRxEthUtilization and mesPortTxEthUtilization statistics in agent Lumentis Port Utilization
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+150073	OneAccess Router ONE50 and ONE60 for Jitter Response
+LIST OF AGENTS SUPPORTED:
+Response Source
+Generic Router/Switch Data
+MIB2 (ATM port)
+MIB2 (lan port)
+MIB2 VLAN (lan port)
+MIB2 (wan port)
+OneAccess QoS CoS Queuing (OUT)
+OneAccess CPU
+
+LIST OF AGENTS TO BE ADDED:
+-Add new agents below:
+Response Destination
+Response Path - PreCreated (OneAccess RTT Jitter App)
+
+-Fixed duplicate keys
+
+DISCOVER MODE:
+LanWan
+RouterSwitch
+Application
+Response
+Qos
+
+Environment Variable:
+
+AAG Report Technology:
+LanWan
+RouterSwitch
+Application
+Response
+Qos
+
+COMMENTS:
+According to the MIB files and Mibdump, we certify Jitter Response Paths base on OA-RTT-MIB.mib (OID:1.3.6.1.4.1.13191.10.3.4.1223.1.3.4).
+We add new agents below:
+Response Destination
+Response Path - PreCreated (OneAccess RTT Jitter App)
+
+-Fixed duplicate keys
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+181515	HP C7000 BladeSystem Current Watt 1.3.6.1.4.1.232.22.2.5.1.1.1.10
+LIST OF AGENTS SUPPORTED:
+Compaq Rack Environment (Fan)
+Compaq Rack Environment (Power Supply)
+MIB2 LAN (FullDuplex/v1)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+MIB2 (wan port) with 64 bit counters, v2c
+UC Davis Server Processor
+UC Davis Server (no host resources)
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+all
+
+Environment Variable:
+None
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+121976	 Cisco IOS Software, 10000 Software (C10K3-K91P11U2-M), - CERTIFICATION FOR AUDIT REPORTS
+LIST OF AGENTS SUPPORTED:
+Cisco Router ATM subinterface
+Cisco Router ATM Vcc aal5, 64 bit counters
+Cisco Router ATM Vcc aal5
+Cisco Router ATM Vcc aal5 w/SCR, 64 bit counters
+MIB2 (ATM port)
+MIB2 (lan port) no multicast
+Vlan SubInterface (HS), no HC Data
+SONET/SDH Line (rfc2558)
+SONET/SDH Path (rfc2558)
+SONET/SDH Section (rfc2558)
+
+LIST OF AGENTS TO BE ADDED:
+Fix the issue: 0.mtf errors
+Change agent Cisco Router ATM subinterface to Cisco Router ATM subinterface no HC
+
+DISCOVER MODE:
+Lan/Wan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Lan/Wan
+
+COMMENTS:
+- Fix the issue: 0.mtf errors
+- Change agent Cisco Router ATM subinterface to Cisco Router ATM subinterface no HC
+- Customer doesn't want to upgrade Ehealth VKIT officially, they want a hot fix packet for this issues.
+
+CUSTOMER'S NEXT STEP:
+- Please apply the hot fix and discover again.
+- Send the testing results to us or let us know whether the issues are fixed.
+
+########################################################################################
+164610	Cisco ASR1002F, required to be certified: Temperature , FAN & Power Supply related
+LIST OF AGENTS SUPPORTED:
+Cisco Router General Data Type 201
+Cisco IPsec Phase-1 IKE Global Statistics (WAN)
+Cisco IPsec Phase-2 Global Statistics (WAN) (v2c)
+Cisco Enhanced Memory Pool - Largest Free, 64 bit counters
+Cisco Environmental Sensor - Current
+Cisco Environmental Sensor - Temperature
+Cisco Environmental Sensor - AC Voltage
+Cisco Environmental Sensor - DC Voltage
+Cisco EXT MIB2 ifVHCPacketGrp CRC no cieIfUtilTbl HSpeed w/Q
+Cisco EXT MIB2 ifVHCPacketGroup no cieIfUtilTable w/QStats
+Cisco FRU feature
+Cisco FRU - Power Supply
+Cisco Memory Pool
+Cisco PPPoE Session
+IP Router Stats v2c
+MIB2 WAN (v2c/HighSpeed/>640M)
+MPLS Tunnel Summary
+IP Router IPv4 Stats, v1 (no Multicast Octets)
+IP Router IPv6 Stats, v1
+
+LIST OF AGENTS TO BE ADDED:
+set the Environment Variable: NH_DISCOVER_CISCO_SENSOR = Yes
+NH_DISCOVER_FRU = yes
+
+DISCOVER MODE:
+Router/Switch & Lan/Wan
+
+ENVIRONMENT VARIABLE:
+set the Environment Variable: NH_DISCOVER_CISCO_SENSOR = Yes
+NH_DISCOVER_FRU = yes
+
+AAG REPORT TECHNOLOGY:
+Router/Switch & Lan/Wan
+
+COMMENTS:
+- There are not the Fan Status statistics.
+- To certify the Temperature , Power Supply the client need to set the Environment Variable: NH_DISCOVER_CISCO_SENSOR = Yes, NH_DISCOVER_FRU = yes
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+########################################################################################
+165914	Certify Arista Networks EOS version 4.8.3 running on an Arista Networks DCS-7508 switch
+LIST OF AGENTS SUPPORTED:
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2(lan port)
+Generic Router/Switch Data
+Host Resources Server (with physical memory)
+Host Resources Server Processor
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE: 
+router, lanwan, system
+
+Environment Variable:
+
+AAG Report Technology:
+
+COMMENTS:
+
+CUSTOMER'S NEXT STEP:
+Please download May Verification Kit and test it. Send your testing results to  Team-IM-eHealthCertQueries@ca.com  
+
+########################################################################################
+177169	Large Delta Messages Received
+LIST OF AGENTS SUPPORTED:
+Catalyst Switch Backplane Plus (sysTraffic) With Speed Calc
+Cisco Router General Data Type 201
+Cisco IPsec Phase-1 IKE Global Statistics (WAN)
+Cisco IPsec Phase-2 Global Statistics (WAN) (v2c)
+Cisco Switch Fabric Module Plus
+Cisco Enhanced Memory Pool - Largest Free
+Cisco EXT MIB2 ifVHCPacketGrp CRC no cieIfUtilTbl HSpeed w/Q
+Cisco Memory Pool
+Cisco Router CPU (w/Buffer,Memory)
+Cisco IOS-IES Environment (Fan)
+Cisco IOS Environment (Fan)
+Cisco IOS Environment (Power Supply)
+Cisco IOS Environment (Temperature+)
+Cisco L2/L3 Switching Engine (HC)
+IP Router Stats
+MIB2 WAN (v2c/HighSpeed/>20M)
+MIB2 WAN (v2c/HighSpeed/>640M)
+MIB2 SubInterface (v2c), ifHighSpeed
+Vlan SubInterface
+MPLS Tunnel Summary
+
+LIST OF AGENTS TO BE ADDED:
+change from agent   IP Router IPv4 Stats, v1 (no Multicast Octets) to agent IP Router IPv4 Stats, v2c (no mcast) to fix bad poll. 
+
+DISCOVERY MODE:
+Router/Switch
+Lan/Wan
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+-cseL2HCForwardedLocalPkts and cseL2HCForwardedTotalPkts are certified in agent ""Cisco L2/L3 Switching Engine (HC)"" as 64 bits counter
+
+CUSTOMER'S NEXT STEP:
+-Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+172405	Certification request for Cisco UCS 220 servers
+LIST OF AGENTS SUPPORTED:
+
+LIST OF AGENTS TO BE ADDED:
+Cisco UCS Fan
+Cisco UCS Psu
+Cisco UCS Server
+
+DISCOVER MODE:
+Application
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Application
+
+COMMENTS:
+Basing on MIB files, there are no objects that indicate Memory and CPU clearly. Hence eHealth will not collect these statistics.
+
+We don't certify fault table 1.3.6.1.4.1.9.9.719.1.1.1.1 because there are no statistics need to be monitored.
+
+We add 3 agents:
+- Cisco UCS Fan
+- Cisco UCS Psu
+- Cisco UCS Server
+
+Fan Status is certified in agent Cisco UCS Fan 
+Power Supply Status is certified in agent Cisco UCS Psu
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+159891	Switch OAM Certification
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data
+RMON (ethernet)
+
+LIST OF AGENTS TO BE ADDED:
+Milan Environment(Power Supply)
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- The new agents are planned for the May Verification Kit.
+
+CUSTOMER NEXT STEPS:
+-Contact to your vendor to get the Mib File
+
+########################################################################################
+180730	Nortel Optera Metro 3500 V16
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 (lan port)
+MIB2 WAN (v2c/HighSpeed/>20M)
+
+LIST OF AGENTS TO BE ADDED:
+Change MIB2 (lan port) into MIB2 LAN (FullDuplex/v2c/>640M)
+Change MIB2 WAN (v2c/HighSpeed/>20M) into MIB2 WAN (v2c/HighSpeed/>640M)
+
+DISCOVER MODE:
+Lan/wan
+Router/Switch
+
+Environment Variable:
+Set NH_DISCOVER_HS_IGNR_SPEED_CHK to Yes
+
+AAG Report Technology:
+Lan/wan
+Router/Switch
+
+COMMENTS:
+- Please set environment variable NH_DISCOVER_HS_IGNR_SPEED_CHK to Yes.
+- The following agents will be changed:
+Change MIB2 (lan port) into MIB2 LAN (FullDuplex/v2c/>640M)
+Change MIB2 WAN (v2c/HighSpeed/>20M) into MIB2 WAN (v2c/HighSpeed/>640M)
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+188894	Linux Memory Stats on Physical Memory Used by Programs/Applications 
+LIST OF AGENTS SUPPORTED:
+Host Resources Server Processor (no device status)
+Host Resources Server Storage (user partition)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+UC Davis Disk IO
+
+LIST OF AGENTS TO BE ADDED:
+change from agent  UC Davis Server (w/interrupt)  to agent UC Davis Server HR No Buffer Cached (w/interrupt) to calculate Physical Memory Used = memTotalReal- memAvailReal - memBuffers - memCache. 
+
+DISCOVERY MODE:
+System 
+
+ENVIRONMENT VARIABLE:
+NH_DISCOVER_PHY_MEMORY_USED_NO_BUFFER_CACHE = yes
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+-Physical Memory Used is calculated as: Physical Memory Used = memTotalReal- memAvailReal - memBuffers - memCache by UC Davis Server HR No Buffer Cached (w/interrupt) agent when environment variable  NH_DISCOVER_PHY_MEMORY_USED_NO_BUFFER_CACHE is enable.
+
+CUSTOMER'S NEXT STEP:
+-Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+158175	NetSNMP %mem used with buffer/cache
+LIST OF AGENTS SUPPORTED:
+Compaq System Environment (Temperature)
+Compaq Server w/Active Connection
+Compaq Server File System (system partition)
+Compaq System Thermal Status
+Compaq System Environment (Fault Tolerant Fan)
+Compaq System Fan Status
+Compaq Environment (Physical Drive)
+Compaq Server Processor
+Compaq Environment (Physical Adapter)
+Compaq Environment (Logical Drive)
+Compaq CPU Fan Status
+Compaq Disk (physical drive)
+Compaq Server File System (user partition)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 LAN (FullDuplex/v1)
+
+LIST OF AGENTS TO BE ADDED:
+Change the agent Compaq Server w/Active Connection to UC Davis Server W/WO Buffer Cache (w/interrupt)
+
+DISCOVERY MODE: 
+System
+
+Environment Variable: 
+NH_DISCOVER_LINUX_MEMORY_BUFFERCACH = Yes
+
+AAG REPORT TECHNOLOGY: 
+System
+
+COMMENTS:
++ Certify %memory used with and without buffer/cache should be calculated as follow:
+	-  ( memTotalReal - memAvailReal - memBuffer - memCached ) / memTotalReal * 100
+	-  ( memTotalReal - memAvailReal ) / memTotalReal * 100
+with:
+·memTotalReal .1.3.6.1.4.1.2021.4.5.0
+·memAvailReal .1.3.6.1.4.1.2021.4.6.0
+·memBuffer  .1.3.6.1.4.1.2021.4.14.0
+·memCached  .1.3.6.1.4.1.2021.4.15.0
+
++ The client need to set the Environment Variable: NH_DISCOVER_LINUX_MEMORY_BUFFERCACH = Yes
+
++ The eHealth discovered the device with ""Compaq Server w/Active Connection"" Server. However, customer needs to monitor NetSNMP %mem used with and without buffer/cache statistics. Therefore, we will change agent from ""Compaq Server w/Active Connection""  Server into ""UC Davis Server W/WO Buffer Cache (w/interrupt)"" Server but eHealth cannot merge ""Compaq Server w/Active Connection"" Server into ""UC Davis Server W/WO Buffer Cache (w/interrupt)"" Server. So, you should delete or retire all  elements before discovering doing a new discovery.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+190835	ALCATEL-LUCENT SAR 7705
+LIST OF AGENTS SUPPORTED:
+Timetra MPLS Interface
+Timetra MIB2 (lan port)
+Timetra MIB2 (lan port) v2c
+MIB2 WAN (v2c/HighSpeed/>640M)
+Alcatel 7x50 QoS Network Port Queue In
+Alcatel 7x50 QoS SAP (No Uncolored Packet)
+Alcatel 7x50 QoS SAP Pchip (No Uncolored Packet)
+Alcatel 7x50 QoS SAP Qchip In
+Alcatel 7x50 QoS SAP Qchip Out
+Alcatel 7x50 QoS Sap Queue In (No Uncolored Packet)
+Alcatel 7x50 QoS Sap Queue Out
+Generic Router/Switch Data
+Timetra CPU
+Timetra DDM Environment Sensor (Optical Power)
+Timetra Environment (Fan)
+Timetra Environment (Power Supply) 1
+Timetra Environment (Power Supply) 2
+Timetra Environment (Temperature)
+Timetra Environment (Temperature Celsius)
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All mode
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+We have been added the portName into element name as you mentioned.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+84248	Migrated from Remedy ID: Cert7947
+LIST OF AGENTS SUPPORTED:  
+Generic Router/Switch Data Type 201  
+MIB2 LAN (FullDuplex/v1)  
+MIB2 (lan port)  
+Tellabs Environment Sensor Fan  
+Tellabs Memory Pool  
+Tellabs Port Stats  
+Tellabs Port Total Stats  
+Tellabs Router CPU 5 min average  
+Tellabs Environment (Power)  
+Tellabs Environment (Temperature)    
+
+LIST OF AGENTS TO BE ADDED:  
+Certify the variable wwpLeosChassisFanModuleStatus for the agent Tellabs Environment Sensor Fan
+Change  Tellabs Router CPU 5 min average into  Tellabs Router CPU 5 min average with Memory
+Response Destination
+Response Source
+Certify the reponse statistic for agent Response Path - PreCreated (Tellabs Jitter App)
+
+DISCOVER MODE: 
+Router/Switch
+Lan/Wan   
+Response
+
+Environment Variable:    
+
+AAG Report Technology:
+Router/Switch
+Lan/Wan
+Response
+
+COMMENTS:  
+- The agent ""Tellabs Memory Pool"" certified memory statistics:
+	wwpLeosSystemMemoryUsageMemoryTotal
+	wwpLeosSystemMemoryUsageMemoryFree
+	wwpLeosSystemMemoryUsageMemoryUsed
+
+- Certify the response statistics for agent Response Path - PreCreated (Tellabs Jitter App)
+	wwpLeosCfmRemoteMEPDelay
+	wwpLeosCfmRemoteMEPJitter
+	wwpLeosCfmExtMEPDMMMinDelay
+	wwpLeosCfmExtMEPDMMMaxDelay
+	wwpLeosCfmExtMEPDMMMinJitter
+	wwpLeosCfmExtMEPDMMMaxJitter
+	wwpLeosCfmRemoteMEPFrameLossNear
+	wwpLeosCfmRemoteMEPFrameLossFar
+
+- Certify CPU statistic and Memory Utilization for agent Tellabs Router CPU 5 min average with Memory
+	wwpLeosSystemCpuLoad5Min
+	wwpLeosSystemMemoryUtilizationUsedMemoryCurrent
+	wwpLeosSystemMemoryUtilizationAvailableMemoryCurrent
+
+CUSTOMER'S NEXT STEP:  
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+184049	certify Brocade MLXe, IronWare Version V5.1.0cT163
+LIST OF AGENTS SUPPORTED:
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 WAN (v2c/HighSpeed/>640M)
+Generic Router/Switch Data Type 201
+Foundry Enviroment SN Agent Temperature
+Generic Switch Backplane Plus
+Foundry Switch CPU w/Memory (1 minute average)
+Foundry Switch Agent CPU
+Foundry Environment (Fan)
+Foundry Environment (Fan Status) 1
+Foundry Environment (Fan Status) 2
+Foundry Environment (Fan Status) 3
+Foundry Environment (Fan Status) 4
+Foundry Environment (Fan Status) 5
+Foundry Environment (Fan Status) 6
+Foundry Environment (Optical Monitoring)
+Foundry Environment (Power Supply)
+Foundry Environment (Power Supply Status) 1
+Foundry Environment (Power Supply Status) 2
+Foundry Environment (Power Supply Status) 3
+Foundry Environment (Power Supply Status) 4
+Foundry MLX Switch Port
+
+LIST OF AGENTS TO BE ADDED:
+Introduce new discovery parameter NH_DISCOVER_FOUNDRY_MLX_SWITCH_PORT (Default value is YES).
+To NOT discover ""Foundry MLX Switch Port"" agent (*switch-port* elements), this parameter should be set to NO
+
+DISCOVER MODE:
+LAN/WAN
+Router/Switch
+
+Environment Variable:
+NH_DISCOVER_FOUNDRY_MLX_SWITCH_PORT = NO
+
+AAG Report Technology:
+LAN/WAN
+Router/Switch
+
+COMMENTS:
+With the new support, we introduce new discovery parameter NH_DISCOVER_FOUNDRY_MLX_SWITCH_PORT (Default value is YES).
+To NOT discover ""Foundry MLX Switch Port"" agent (*Switch-Port* elements), you just need to set this parameter to NO in OnceClick Discovery Policy.
+
+The new support is planed for May VKIT
+
+CUSTOMER'S NEXT STEP:
+Wait for verification email from us inform the availability of testing.
+
+
+########################################################################################
+149489	SatLink 2000 VSAT - 21196003
+LIST OF AGENTS SUPPORTED:
+MIB2 (wan port)
+
+LIST OF AGENTS TO BE ADDED:
+MIB2 (lan port)
+
+DISCOVER MODE:
+Lan/Wan
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- We will certify ethernet interface in agent ""MIB2 (lan port)"".
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+180318	F5 BIG IP - 3600 Memory Accounting
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 BigIP Global Host CPU (5Min)
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 BigIP Pool Member Stat Pva
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 BigIP Virtual Server Entity
+F5 BigIP Pool Member Stat Server
+F5 (lan port)
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP APM Profile Connectivity Stat
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual TCP Stat Connections
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- sysStatMemoryTotal (1.3.6.1.4.1.3375.2.1.1.2.1.44) and sysStatMemoryUsed (1.3.6.1.4.1.3375.2.1.1.2.1.45) stats have been certified in agent ""F5 BigIP TMM CPU v9"".
+- sysTmmStatMemoryTotal (1.3.6.1.4.1.3375.2.1.8.2.3.1.31) and sysTmmStatMemoryUsed (1.3.6.1.4.1.3375.2.1.8.2.3.1.32) stats have been certified in agent ""F5 BigIP TMM CPU Stats"".
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+180314	F5 BIG IP - 1500 Memory Accounting
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM SNAT Client
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 BigIP Pool Member Stat Pva
+F5 BigIP System CPU Fan Speed
+F5 BigIP System CPU Temperature
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 BigIP Virtual Server Entity
+F5 BigIP Pool Member Stat Server
+F5 (lan port)
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual TCP Connections
+F5 BigIP Virtual TCP Open Connections
+F5 BigIP Virtual TCP Stat Connections
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- sysStatMemoryTotal (1.3.6.1.4.1.3375.2.1.1.2.1.44) and sysStatMemoryUsed (1.3.6.1.4.1.3375.2.1.1.2.1.45) stats have been certified in agent ""F5 BigIP TMM CPU v9"".
+- sysTmmStatMemoryTotal (1.3.6.1.4.1.3375.2.1.8.2.3.1.31) and sysTmmStatMemoryUsed (1.3.6.1.4.1.3375.2.1.8.2.3.1.32) stats have been certified in agent ""F5 BigIP TMM CPU Stats"".
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+178941	Cisco Ironport Mail Gateway ios 7.0.1-010 additional OIDs
+LIST OF AGENTS SUPPORTED:
+IronPort Environment Sensor Fan
+Iron Port Router CPU (with memory data)
+Ironport Environment (Power Supply)
+IronPort Environment (Temperature)
+Iron Port Router/Switch Data
+Iron System Mail Gateway
+MIB2 (lan port)
+
+LIST OF AGENTS TO BE ADDED:
+Certify asked OIDs
+	1.3.6.1.4.1.15497.1.1.1.14
+	1.3.6.1.4.1.15497.1.1.1.15
+	1.3.6.1.4.1.15497.1.1.1.16
+	1.3.6.1.4.1.15497.1.1.1.20
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+Application
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+Application
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- The OID 1.3.6.1.4.1.15497.1.1.1.11 (workQueueMessages) has been certified in ""Iron Port Router/Switch Data"" agent.
+- The OID 1.3.6.1.4.1.15497.1.1.1.2 (perCentCPUUtilization) has been certified in ""Iron Port Router CPU (with memory data)"" agent.
+- We will certify the following OIDs in ""Iron System Mail Gateway"" agent:
+	1.3.6.1.4.1.15497.1.1.1.14
+	1.3.6.1.4.1.15497.1.1.1.15
+	1.3.6.1.4.1.15497.1.1.1.16
+	1.3.6.1.4.1.15497.1.1.1.20
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+180315	F5 BIG IP - 1600 Memory Accounting
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM SNAT Client
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 BigIP Pool Member Stat Pva
+F5 BigIP System CPU Fan Speed
+F5 BigIP System CPU Temperature
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 BigIP Virtual Server Entity
+F5 BigIP Pool Member Stat Server
+F5 (lan port)
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual TCP Connections
+F5 BigIP Virtual TCP Open Connections
+F5 BigIP Virtual TCP Stat Connections
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- sysStatMemoryTotal (1.3.6.1.4.1.3375.2.1.1.2.1.44) and sysStatMemoryUsed (1.3.6.1.4.1.3375.2.1.1.2.1.45) stats have been certified in agent ""F5 BigIP TMM CPU v9"".
+- sysTmmStatMemoryTotal (1.3.6.1.4.1.3375.2.1.8.2.3.1.31) and sysTmmStatMemoryUsed (1.3.6.1.4.1.3375.2.1.8.2.3.1.32) stats have been certified in agent ""F5 BigIP TMM CPU Stats"".
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+150803	CPU and Memory HP 3COM H3C S7510E
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201
+Huawei Environment Sensor Temperature
+Huawei Environment Sensor Voltage
+Huawei AR46XX CPU with Mem
+MIB2 (lan port)
+MIB2 VLAN (lan port)
+MIB2 (wan port)
+
+LIST OF AGENTS TO BE ADDED:
+None
+
+DISCOVER MODE:
+Router/Switch & Lan/Wan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Router/Switch & Lan/Wan
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- CPU & Memory statistics have been certified in agent Huawei AR46XX CPU with Mem
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+
+########################################################################################
+84335	Migrated from Remedy ID: Cert8035
+LIST OF AGENTS SUPPORTED:
+MIB2 ENET (FullDuplex/v2c/HighSpeed/>20M)
+IP Router IPv6 Stats, v2c
+IP Router IPv4 Stats, v1 (no Multicast Octets)
+IP Router Stats
+Cisco Enhanced Memory Pool - Largest Free, 64 bit counters
+Cisco Router CPU 5min CPM (w/memory)
+Cisco SAN Router CPU (w/memory)
+Cisco Router General Data Type 201
+MIB2 ENET (FullDuplex/v2c/HighSpeed/>640M)
+Cisco ISO Process
+Cisco ISO Process Group
+Cisco AAA Authorization
+Cisco AAA Authentication
+Cisco AAA Accounting
+Cisco AAA
+Cisco Environmental Sensor - Temperature
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:
+NH_DISCOVER_CISCO_SENSOR = yes
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+- turn NH_DISCOVER_CISCO_SENSOR = yes
+- We modify name of elements of agent ""Cisco Environmental Sensor - Temperature"" with value of PhysicalDescr 1.3.6.1.2.1.47.1.1.1.1.2
+- We have removed discover key index of agent Cisco Environmental Sensor - Temperature
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+184348	Recertify 12.8 vSphere AIM New Metrics in Ehealth
+LIST OF AGENTS SUPPORTED:
+CA VCAIM Guest Disk
+CA VCAIM Physical Network
+CA SystemEDGE CAVMVCA Host
+CA VCAIM Host Disk
+CA SystemEDGE VMWare VC Temperature Sensor
+CA SystemEDGE VMWare VC Cluster
+CA SystemEDGE VMWare VC Datastore
+CA VCAIM Storage Sensor
+CA SystemEDGE VMWare VC Voltage Sensor
+CA SystemEDGE VMWare VC Power Sensor
+CA SystemEDGE VMWare Virtual Center
+CA SystemEDGE VMWare VC Resource Pool
+CA SystemEDGE VMWare VC Virtual Machine
+CA SystemEDGE VMWare VC Datacenter
+CA SystemEDGE CAVMVCA VApp
+CA SystemEDGE VMWare VC Virtual Disk
+CA SystemEDGE VMWare VC Virtual Network
+
+LIST OF AGENTS TO BE ADDED:
+CA SystemEDGE VMWare VC Cluster (12.8)
+CA SystemEDGE CAVMVCA Host (12.8)
+CA SystemEDGE VMWare VC Resource Pool (12.8)
+CA SystemEDGE VMWare VC Virtual Machine (12.8)
+
+DISCOVER MODE:
+System Application 
+
+Environment Variable:
+
+AAG Report Technology:
+
+COMMENTS:
+vmvcAimStatClusterCPUCountProvisioned 1.3.6.1.4.1.546.16.52.2.7.2.1.20
+vmvcAimStatClusterCPUCountUsage 1.3.6.1.4.1.546.16.52.2.7.2.1.21
+vmvcAimStatClusterCPUContentionPercent 1.3.6.1.4.1.546.16.52.2.7.2.1.22
+vmvcAimStatHostCPUCountVCPUUsage 1.3.6.1.4.1.546.16.52.2.8.2.1.98
+vmvcAimStatHostCPUContentionPercent 1.3.6.1.4.1.546.16.52.2.8.2.1.99
+vmvcAimStatResourcePoolVCPUProvisioned 1.3.6.1.4.1.546.16.52.2.9.2.1.49
+vmvcAimStatResourcePoolCPUContentionPercent 1.3.6.1.4.1.546.16.52.2.9.2.1.50
+vmvcAimStatVMCPUContentionPercent 1.3.6.1.4.1.546.16.52.2.10.2.1.103
+
+CUSTOMER'S NEXT STEP:
+Please download May Verification Kit and test it. Send your testing results to  Team-IM-eHealthCertQueries@ca.com  
+
+VERIFICATION MONTH:
+May
+
+TARGET RELEASE:
+6.2.2. D12
+6.3.1.04
+
+########################################################################################
+179773	Cisco IOS Software, s72033_rp Software (s72033_rp-ADVENTERPRISEK9-VM), Version12.2(33)SXI6
+LIST OF AGENTS SUPPORTED:
+Catalyst Switch Backplane Plus (sysTraffic) With Speed Calc
+Cisco Router General Data Type 201
+Cisco IPsec Phase-1 IKE Global Statistics (WAN)
+Cisco AAA Session
+Cisco Adjacency Entities
+Cisco Adjacency Usage
+Cisco Catalyst Switching Engine
+Cisco Switch Fabric Module Plus Error
+Cisco Switch Fabric Module Plus With Peak
+Cisco Enhanced Memory Pool - Largest Free
+Cisco Entity Sensor(Temperature)
+Cisco EXT MIB2 Collision ifPacketGroup Que
+Cisco FIB TCAM Entities
+Cisco FIB TCAM Protocol Entities
+Cisco FIB TCAM Usage by Protocol
+Cisco FIB TCAM Usage
+Cisco Flash Partition
+Cisco Flash Server
+Cisco Switch Engine Flow Stats
+Cisco Global IKE Tunnel
+Cisco Global IPSec Tunnel
+Cisco ICAM Entities
+Cisco ICAM Usage
+Cisco ISO Process Group
+Cisco ISO Process
+Cisco MAC Entities
+Cisco MAC Usage
+Cisco Memory Pool
+Cisco NetFlow Cache
+Cisco NetFlow Export Stats
+Cisco Pool ISDN
+Cisco RAS CPU
+Cisco RAS ISDN
+Cisco Remote Access Server
+Cisco Rate Limiter Entities
+Cisco Rate Limiter Usage
+Cisco Router CPU (w/Buffer,Memory,Monitor Interval)
+Cisco IOS-IES Environment (Fan)
+Cisco IOS Environment (Fan)
+Cisco IOS Environment (Power Supply)
+Cisco IOS Environment (Temperature+)
+Cisco VPN CAM Entities
+Cisco VPN CAM Usage
+MIB2 (Cisco Ethernet port v9.1-)
+Cisco Routed VLAN (w/MIB2)
+MIB2 WAN (Cisco v9.1-)
+Modem Pool
+Response Source
+MPLS Tunnel Summary
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All mode
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+According to the mibdump file provided, this device has fully certified with detail list agents above. In Addition, we have been used the pmCPUMemoryUsed (OID's: 1.3.6.1.4.1.9.9.109.1.1.1.1.12) and cpmCPUMemoryFree (OID's: 1.3.6.1.4.1.9.9.109.1.1.1.1.13) on agent ""Cisco Router CPU (w/Buffer,Memory,Monitor Interval)"".
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from support.ca.com, install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://support.concord.com/support/secure/certkits/, install it, and test the certification.
+Please send your test results to Team-IM-eHealthCertQueries@ca.com
+
+########################################################################################
+169812	 FortiGate 310B
+LIST OF AGENTS SUPPORTED:
+Fortinet Cluster
+Fortinet FortiGate  CPU
+Fortinet FortiGate Session
+Fortinet Session
+Generic Router/Switch Data
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 (lan port)
+
+LIST OF AGENTS TO BE ADDED:
+Fortinet FortiGate HTTP Proxy
+
+DISCOVER MODE:
+Application
+Lan/Wan
+RouterSwitch
+
+Environment Variable:
+
+AAG Report Technology:
+Application
+Lan/Wan
+RouterSwitch
+
+PATCH DEPENDENT:
+Yes
+
+COMMENTS:
+You request us certify FortiGate 310B firewall device. 
+
+According to the MIB files and Mibdump, we add new agent: ""Fortinet FortiGate HTTP Proxy"".
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+105719	Mcafee Elements Not Discovered
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201
+SNMP McAfee Environment (Fan) 
+SNMP McAfee Environment (Power 1) 
+SNMP McAfee Environment (Power 2) 
+SNMP McAfee Environment (Temp)
+SNMP McAfee Virtual TCP Session
+
+LIST OF AGENTS TO BE ADDED:
+SNMP McAfee Port Stats
+
+DISCOVER MODE:
+Lan/Wan
+RouterSwitch
+
+Environment Variable:
+
+AAG Report Technology:
+Lan/Wan
+RouterSwitch
+
+COMMENTS:
+You requested us to certify interface base on MCAFEE-SENSOR-PERF-MIB (OID 1.3.6.1.4.1.8962.2.1.3.1.1.3.1.1).
+
+According to the MIB files and mibdump, we add new agent: SNMP McAfee Port Stats
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+161620	Multi-Instance VC-AIM currently is not supported by eHealth
+LIST OF AGENTS SUPPORTED:
+CA VCAIM Guest Disk
+CA VCAIM Physical Network
+CA SystemEDGE CAVMVCA Host
+CA VCAIM Host Disk
+CA SystemEDGE VMWare VC Temperature Sensor
+CA SystemEDGE VMWare VC Cluster
+CA SystemEDGE VMWare VC Datastore
+CA VCAIM Storage Sensor
+CA SystemEDGE VMWare VC Voltage Sensor
+CA SystemEDGE VMWare VC Power Sensor
+CA SystemEDGE VMWare  Virtual Center
+CA SystemEDGE VMWare VC Resource Pool
+CA SystemEDGE VMWare VC Virtual Machine
+CA SystemEDGE VMWare VC Datacenter
+CA SystemEDGE CAVMVCA VApp
+CA SystemEDGE VMWare VC Virtual Disk
+CA SystemEDGE VMWare VC Virtual Network
+
+LIST OF AGENTS TO BE ADDED:
+CA SystemEDGE VMWare Multi-Instance Virtual Center
+
+DISCOVER MODE:
+System Application 
+
+Environment Variable:
+
+AAG Report Technology:
+
+COMMENTS:
+
+CUSTOMER'S NEXT STEP:
+Please download May Verification Kit and test it. Send your testing results to  Team-IM-eHealthCertQueries@ca.com  
+
+########################################################################################
+102971	Certification for HP Model 5120 QoS Elements
+LIST OF AGENTS SUPPORTED:
+MIB2 (wan port)
+MIB2 VLAN (lan port)
+Huawei Hangzhou Environment Sensor Voltage
+Huawei Hangzhou Environment Sensor Temperature
+Huawei Hangzhou Application DHCP
+Response Source  
+Generic Router/Switch Data Type 201
+Huawei Hangzhou H3C CPU
+MIB2 (lan port) no outoctet, 64 bit, ifHighSpeed, v2c 
+
+LIST OF AGENTS TO BE ADDED:
+Huawei Hangzhou Entity CPU
+Change MIB2 (wan port) to MIB2 (wan port) with 64 bit counters, v2c
+Change MIB2 VLAN (lan port) to MIB2 VLAN (64bit, v2c)
+Change MIB2 (lan port) no outoctet, 64 bit, ifHighSpeed, v2c to MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M) when speed is greater than 640M and change toMIB2 LAN (FullDuplex/v2c/HighSpeed/>20M) when speed less than 640M & greater than 20M
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE:
+NH_DISCOVER_ENTITY_CPU
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+- We will restore the Entity CPU elements as the Before patch and change some agents to fit with Lan/Wan elements 
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+161484	Certification for Avaya MEDPRO and VAL technology types for S8700 server
+LIST OF AGENTS SUPPORTED:
+Avaya Connections
+Avaya G3 CPU
+Generic Router/Switch Data
+MIB2 (lan port) no multicast no unicast, no unknown
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+All
+
+Environment Variable:
+
+AAG Report Technology:
+All
+
+COMMENTS:
+According to the list of agents supported above, it seems like this device is fully certified. Are you 
+able to discover the list of agents above? If not, then please download the latest verification kit or 
+maintenance pack as described below. If you already able to discover and poll the list of supported 
+agents above, then please let us know what else you're requesting us to do.
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+117655	Certification of Blue Coat proxySG SGOS 6.2.7.1 and SGOS 6.2.9.1
+LIST OF AGENTS SUPPORTED:
+Blue Coat HTTP Connections
+Blue Coat SG Proxy CPU CORE
+Blue Coat SG Proxy CPU
+Blue Coat Hard Disk (Utilization only)
+BlueCoat Environment Sensor - Celsius
+BlueCoat Environment Sensor - RPM
+BlueCoat Environment Sensor - Voltage
+BlueCoat Environment Sensor
+Blue Coat Hard Disk
+Blue Coat Proxy Server
+BlueCoat SG Proxy
+Blue Coat SG8000 Proxy Server Processor Memory
+CacheFlow/Blue Coat HTTP Proxy
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+Blue Coat HTTP Proxy CPU (Memory Only)
+Blue Coat SG Proxy CPU CORE no Memory
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+Application,System
+
+ENVIRONMENT VARIABLE:
+NH_DISCOVER_BLUECOAT_CPU_FILTER = yes
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+Add new agents ""Blue Coat HTTP Proxy CPU (Memory Only)"" and ""Blue Coat SG Proxy CPU CORE no Memory"" from mode ""Application"" into mode ""System"".It caused missing element on agent ""Blue Coat HTTP Proxy CPU (Memory Only)"" and ""Blue Coat SG Proxy CPU CORE no Memory"" at ""Application"" mode. We used sgProxyCpuCoreBusyTime & sgProxyCpuCoreIdleTime instead in agent type ""Blue
+Coat SG Proxy CPU CORE no Memory and creates one elements of type Blue Coat HTTP Proxy CPU (Memory Only)
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+162091	Certify Cisco CRS-1 for Response Path 
+LIST OF AGENTS SUPPORTED:
+Cisco EXT MIB2 ifVHCPacketGroup all (HighSpeed)
+Cisco Flash Partition
+Generic Integrated QoS
+Cisco Environmental Sensor - Temperature
+Cisco Flash Server
+Cisco QoS CoS Queuing BW (OUT/v2c) No Buf Drops
+Cisco Memory Pool - no Largest Free
+Cisco ISO Process
+Cisco ISO Process Group
+Cisco QoS CoS Contract Policed (OUT/v2c)
+Cisco Router General Data Type 201
+Cisco Entity Sensor(Temperature)
+Cisco QoS CoS (OUT/v2c) No Buf Drops
+Cisco Enhanced Memory Pool, 64 bit counters
+Cisco Connection BGP4 Peer
+Cisco QoS CoS (IN/v2c) No Buf Drops
+MIB2 SubInterface (v2c), ifHighSpeed
+Cisco Router CPU
+
+LIST OF AGENTS TO BE ADDED:
+Response Source
+Response Path - PreCreated(Cisco RttMonJitter OWDelay NoSize)
+Response Destination
+
+DISCOVERY MODE:
+All
+
+ENVIRONMENT VARIABLE: NH_DISCOVER_IPSLA_NO_OWNER_STRING = yes
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+
+NH_DISCOVER_IPSLA_NO_OWNER_STRING  should be set to yes to discover response path elements
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+
+########################################################################################
+194640	GAP IN CHARTS - 21348545
+LIST OF AGENTS SUPPORTED:
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+Set NH_DISCOVER_SNMPv2c_ONLY to Yes
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+COMMENTS:
+- Please apply the hotfix from ticket 21177351
+- Set environment variable NH_DISCOVER_SNMPv2c_ONLY to yes
+- Discover again with new code
+- The mib2-v2c-fullDup-enet.mtf will be changed into mib2-v2c-hs-fullDup-enet.mtf
+- Save new results
+- If the gap problem persist, please send us the below informations:
+	+ ""finder.debug"" with Lan/Wan, Router/Switch separately
+	+ discoverInteractive log
+	+ output file of command:
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.1.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.3.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.3.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.22 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.24 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.25 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.23 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.13 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.48 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.49 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.14 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.13 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.1 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.1 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.12 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.2.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.1.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.1.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.1.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.1.3.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.25.3.3.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.19 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.3.2.1.1.5 -f <file-name> <IP address of device>
+
+CUSTOMER'S NEXT STEP:
+If the gap problem persist, please send us the below informations:
+	+ ""finder.debug"" with Lan/Wan, Router/Switch separately
+	+ discoverInteractive log
+	+ output file of command:
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.1.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.3.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.5624.1.2.49.1.3.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.22 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.24 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.25 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.15.73.2.2.1.23 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.13 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.48 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.49 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.14 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.1.2.1.1.13 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.1.4.1.2.1.1 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.16 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.9 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.10 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.1 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.12 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.3 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.8 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.2.1.1.1.2.1.1.11 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.2.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.1.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.1.1.12.1.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.7 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.4 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.270.4.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.1.2.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.1.3.1.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.1.5 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.2501.1.1.6 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.25.3.3.1.2 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.2.1.10.7.2.1.19 -f <file-name> <IP address of device>
+nhSnmpTool -c <community string>  -o 1.3.6.1.4.1.52.4.3.3.2.1.1.5 -f <file-name> <IP address of device>
+
+########################################################################################
+180332	F5 BIG IP - 8900 Memory Accounting
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 BigIP Global Host CPU (5Min)
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 BigIP Pool Member Stat Pva
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 BigIP Virtual Server Entity
+F5 BigIP Pool Member Stat Server
+F5 (lan port)
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP APM Profile Connectivity Stat
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual TCP Stat Connections
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- sysStatMemoryTotal (1.3.6.1.4.1.3375.2.1.1.2.1.44) and sysStatMemoryUsed (1.3.6.1.4.1.3375.2.1.1.2.1.45) stats have been certified in agent ""F5 BigIP TMM CPU v9"".
+- sysTmmStatMemoryTotal (1.3.6.1.4.1.3375.2.1.8.2.3.1.31) and sysTmmStatMemoryUsed (1.3.6.1.4.1.3375.2.1.8.2.3.1.32) stats have been certified in agent ""F5 BigIP TMM CPU Stats"".
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+182772	Cisco UCS C210
+LIST OF AGENTS SUPPORTED:
+None
+
+LIST OF AGENTS TO BE ADDED:
+Cisco UCS Server
+Cisco UCS Fan
+Cisco UCS Storage
+
+DISCOVER MODE:
+Application
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Application
+
+COMMENTS:
+Add 3 agents 
+-Cisco UCS Server
+-Cisco UCS Fan 
+-Cisco UCS Storage
+
+Fan State is certified in agent Cisco UCS Fan 
+Disk Operability is certified in agent Cisco UCS Storage
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+170211	Juniper idp 800 version IDP 5.1.139197 
+LIST OF AGENTS SUPPORTED:
+Host Resources Server Storage (NT user partition)
+Host Resources Server
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 LAN (FullDuplex/v1)
+Juniper Router Data
+
+LIST OF AGENTS TO BE ADDED: 
+Juniper IDP CPU (w/memory)
+IDP Session
+
+DISCOVERY MODE:
+All 
+
+ENVIRONMENT VARIABLE: 
+None 
+
+AAG REPORT TECHNOLOGY: 
+
+COMMENTS:
+-  Added support for CPU and Sessions
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification. 
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification. 
+Send the testing results to us through the ticket system.
+
+########################################################################################
+180872	CiscoCisco NX-OS(tm) n5000 - 21294640
+LIST OF AGENTS SUPPORTED:
+Cisco Router General Data Type 201
+Cisco Router CPU 5min CPM (w/memory)
+IP Router Stats
+MIB2 ENET (FullDuplex/v2c/HighSpeed/>20M)
+MIB2 ENET (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 Ethernet w/DOT3, 64 bit counters
+MIB2 WAN (v2c/HighSpeed/>20M)
+MIB2 WAN (v2c/HighSpeed/>640M)
+IP Router IPv4 Stats, v1 (no Multicast Octets)
+IP Router IPv6 Stats, v1
+
+LIST OF AGENTS TO BE ADDED:
+None
+
+DISCOVER MODE:
+Router/Switch & Lan/Wan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Router/Switch & Lan/Wan
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- Unknown ElementType errors have been fixed
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+
+Send the testing results to us through the ticket system.
+
+########################################################################################
+152777	couldnt find pre policy packet element under report generator Certification required: QOS policy for PrePolicyPkt
+LIST OF AGENTS SUPPORTED:
+Cisco QoS CoS (IN/v2c)
+Cisco QoS CoS (OUT/v2c)
+Cisco QoS CoS Policer (v1.6), no packets
+Cisco QoS CoS Policer, no packets
+Generic Integrated QoS
+Response Source
+Generic Router/Switch Data
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 LAN no ifLastChange no multicast
+MIB2 WAN (Unicast/v1)
+MIB2 WAN (v2c/HighSpeed/>20M)
+MIB2 WAN (v2c/HighSpeed/>640M)
+Vlan SubInterface (HS), no HC Data
+MIB2 SubInterface (v2c), ifHighSpeed
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+Lan/Wan
+RouterSwitch
+Response
+Qos
+MobileWireless
+
+Environment Variable:
+
+AAG Report Technology:
+Lan/Wan
+RouterSwitch
+Response
+Qos
+MobileWireless
+
+COMMENTS:
+You requested us to certify the object cbQosCMPrePolicyPkt (OID 1.3.6.1.4.1.9.9.166.1.15.1.1.2) in CISCO-CLASS-BASED-QOS-MIB.
+
+Here is our analysis:
+
+- According to the list of agents supported above, it seems like this device is fully certified. Are you 
+able to discover the list of agents above? If not, then please download the latest verification kit or 
+maintenance pack as described below. If you already able to discover and poll the list of supported 
+agents above, then please let us know what else you're requesting us to do.
+
+- ""Cisco QoS CoS (IN/v2c)"" agent and ""Cisco QoS CoS (OUT/v2c)"" agent have monitored cbQosCMPrePolicyPkt64 (OID 1.3.6.1.4.1.9.9.166.1.15.1.1.3) in CISCO-CLASS-BASED-QOS-MIB.
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+172836	MSCS AIM 12.5
+LIST OF AGENTS SUPPORTED:
+SystemEDGE Server Disk Storage
+SystemEDGE Server Processor (NT)
+SystemEDGE Windows Server (w/poolNonPaged)
+SystemEDGE NT System Partition FS
+MIB2 (lan port)
+
+LIST OF AGENTS TO BE ADDED:
+- ""SystemEDGE Server Disk Storage"" agent has monitored cluster disks.
+
+- fixed bad polls.
+
+DISCOVER MODE:
+System
+
+Environment Variable:
+
+AAG Report Technology:
+System
+
+COMMENTS:
+You request us certify cluster disks with MSCS Cluster AIM. 
+Here is our analysis:
+
+- ""SystemEDGE Server Disk Storage"" agent has monitored cluster disks.
+
+- We fixed bad polls.
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+143852	BROCADE MLXE certification
+LIST OF AGENTS SUPPORTED:
+MIB2 VLAN (lan port)
+MIB2 WAN (v2c/HighSpeed/>640M)
+MIB2 (wan port) with 64 bit counters, v2c
+MIB2 (lan port) with 64 bit counters, v2c
+MIB2 (lan port)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+Generic Switch Backplane Plus
+Generic Router/Switch Data Type 201
+Foundry Switch CPU w/Memory (1 minute average)
+Foundry Switch Agent CPU
+Foundry Environment (Power Supply)
+Foundry Environment (Fan)
+Foundry Environment (Fan Status) 6
+Foundry Environment (Fan Status) 5
+Foundry Environment (Fan Status) 4
+Foundry Environment (Fan Status) 3
+Foundry Environment (Fan Status) 2
+Foundry Environment (Fan Status) 1
+Foundry Environment (Optical Monitoring)
+Foundry MLX Switch Port
+Foundry Environment (Power Supply Status) 4
+Foundry Environment (Power Supply Status) 3
+Foundry Environment (Power Supply Status) 2
+Foundry Environment (Power Supply Status) 1
+Foundry Enviroment SN Agent Temperature
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+Lan/Wan, Router/Switch, System, Application
+
+ENVIRONMENT VARIABLE:
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+1.We will fix the value of the OID snAgentTempValue delivers the temperature in 0.5 °C by divided the value by 2.
+
+2. About your requested :Would it be possible to add the newly certified trend vars to the AAG report of the parent router element?
+It is impossible to do that. So to monitor the value of newly certified trend vars you should run the trend report corresponding to the child element.
+
+3. Would it be possible to replace the string management by mgmt when building element name?
+We will change ""management"" by ""mgmt"" in element name and we still using the index for discover key and element name to make that unique.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+182125	Cisco 4506 MGT MIB 
+LIST OF AGENTS SUPPORTED:
+Cisco EXT MIB2 Collision ifPacketGroup Que
+Cisco EXT MIB2 ifVHCPacketGrp CRC no cieIfUtilTbl HSpeed w/Q
+Cisco EXT MIB2 ifVHCPacketGroup no cieIfUtilTable w/QStats
+MIB2 (Cisco Ethernet port v9.1-) no nunicast, 64 bit counters
+Cisco Routed VLAN (w/MIB2) no NUcastPkts
+MIB2 WAN (v2c/HighSpeed/>640M)
+
+LIST OF AGENTS TO BE ADDED:
+Change agent ""Cisco EXT MIB2 Collision ifPacketGroup Que"" into ""Cisco EXT MIB2 Collision ifPacketGroup Que noBroadCastPkts"" for fixing bad polls
+
+DISCOVER MODE:
+LanWan
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+LanWan
+
+COMMENTS:
+We change agent ""Cisco EXT MIB2 Collision ifPacketGroup Que"" into ""Cisco EXT MIB2 Collision ifPacketGroup Que noBroadCastPkts"" for fixing bad polls.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+131584	Certification Request for Genband SBC S3
+LIST OF AGENTS SUPPORTED:
+Host Resources Server
+Host Resources Server Storage (user partition)
+Host Resources Server Processor
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+MIB2 LAN (FullDuplex/v1)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+
+LIST OF AGENTS TO BE ADDED:
+Change Host Resources Server Storage (user partition) into Host Res Server Storage (user partition, no alloc failures)
+
+DISCOVER MODE:
+LanWan, System,Application
+
+Environment Variable:
+None
+
+AAG Report Technology:
+None
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- According to Mibdump provided, It does not contain following statistics:
+		ENTITY-SENSOR-MIB (RFC 3433) 
+		1.3.6.1.2.1.99    - not populated 
+entPhySensorValue 
+entPhySensorOperStatus 
+entPhySensorValueTimeStamp
+		  
+		  NETWORK-SERVICES-MIB (RFC 2788) 
+1.3.6.1.2.1.27    - not populated 
+applOperStatus 
+applLastChange 
+		  
+		SIP-SERVER-MIB (RFC 4780) 
+1.3.6.1.2.1.151    - not populated 
+sipServerProxyStatProxyReqFailures 
+sipServerProxyStatsDisconTime 
+sipServerCfgProxyStatefulness 
+sipServerCfgProxyRecursion 
+sipServerCfgProxyRecordRoute 
+sipServerRegMaxContactExpiryDuration 
+sipServerRegMaxUsers 
+sipServerRegCurrentUsers 
+sipServerRegDfltRegActiveInterval 
+sipServerRegStatsAcceptedRegs 
+sipServerRegStatsRejectedRegs 
+sipServerRegStatsDisconTime 
+
+		SIP-COMMON-MIB (RFC 4780) 
+1.3.6.1.2.1.149    - not populated 
+sipCommonOtherStatsNumUnsupportedUris 
+sipCommonOtherStatsNumUnsupportedMethods 
+sipCommonOtherStatsOtherwiseDiscardedMsgs 
+sipCommonOtherStatsDisconTime 
+sipCommonSummaryInRequests 
+sipCommonSummaryOutRequests 
+sipCommonSummaryInResponses 
+sipCommonSummaryOutResponses 
+sipCommonSummaryTotalTransactions 
+sipCommonSummaryDisconTime 
+sipCommonTransCurrentactions 
+sipCommonCfgServiceOperStatus 
+sipCommonCfgServiceStartTime 
+sipCommonCfgServiceLastChange 
+		  
+- We change ""Host Resources Server Storage (user partition)"" into ""Host Res Server Storage (user partition, no alloc failures)"" to fix bad poll
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+178279	certification requested for Cisco ASR9k v4.2.3
+LIST OF AGENTS SUPPORTED:
+Cisco Router General Data Type 201
+Cisco Connection BGP4 Peer
+Cisco Environmental Sensor - Current
+Cisco Environmental Sensor - Temperature
+Cisco Environmental Sensor - DC Voltage
+Cisco Environmental Sensor - Power
+Cisco EXT MIB2 ifVHCPacketGroup all (HighSpeed)
+Cisco ISO Process Group
+Cisco ISO Process
+Cisco Remote Access Server
+Modem Pool
+MIB2 WAN (v2c/HighSpeed/>640M)
+Vlan SubInterface (HS), no HC Data
+MIB2 SubInterface (v2c), ifHighSpeed
+Cisco Enhanced Memory Pool, 64 bit counters
+Cisco Entity Sensor(Temperature)
+Cisco Flash Partition
+Cisco Flash Server
+Cisco Memory Pool - no Largest Free
+Cisco Router CPU
+Response Source
+IP Router Stats
+IP Router IPv6 Stats, v1
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All mode
+
+ENVIRONMENT VARIABLE:
+NH_DISCOVER_CISCO_SENSOR = yes
+
+AAG REPORT TECHNOLOGY:
+
+COMMENTS:
+According to the mibdump file provided, this device has fullycertified with detail list agents above.
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from support.ca.com, install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://support.concord.com/support/secure/certkits/, install it, and test the certification.
+Please send your test results to Team-IM-eHealthCertQueries@ca.com
+
+########################################################################################
+178705	Certification of F5 Networks BIG-IP 11.1.0 Build 2027.0 Hotfix HF2
+LIST OF AGENTS SUPPORTED:
+F5 BigIP System Status
+F5 Big IP Authorization
+F5 Big IP HTTP RAM Cache
+F5 Big IP Client Side SSL Profiles
+F5 BigIP Global Host CPU (5Min)
+F5 BigIP LocalTM Node Address Connections (Server Side)
+F5 BigIP LocalTM Pool Connections (Server Side)
+F5 BigIP LocalTM Virtual Address Connections (Client Side)
+F5 BigIP Multi Host CPU (5MinRev)
+F5 Big IP Node Address
+F5 BigIP Pool Member Stat Pva
+F5 Big IP Server Side SSL Profiles
+F5 BigIP System Client Compat Connections w/SSL
+F5 BigIP System Client Native Connections w/SSL
+F5 BigIP System Server Compat Connections w/SSL
+F5 BigIP System Server Native Connections w/SSL
+F5 Big IP System Stats
+F5 BigIP TMM Stat (Client Side)
+F5 BigIP TMM Stat (Server Side)
+F5 Big IP Trunk Stats
+F5 BigIP Virtual Server Entity
+F5 HTTP Proxy
+F5 BigIP Pool Member Stat Server
+F5 BigIP Interface Stat
+F5 BigIP TMM CPU Stats
+F5 BigIP TMM CPU v9
+F5 Environment (Fan)
+F5 Environment (Power Supply)
+F5 Environment (Temperature)
+F5 Router/Switch Data Type 201 - v9
+F5 BigIP APM Profile Connectivity Stat
+F5 BigIP Virtual Client-Side
+F5 BigIP Virtual PVA Client-Side
+F5 BigIP Virtual PVA Server-Side
+F5 BigIP Virtual Server-Side
+F5 BigIP Virtual SSL Client-Side
+F5 BigIP Virtual SSL Server-Side
+F5 BigIP Virtual TCP Stat Connections
+MIB2 LAN (FullDuplex/v1)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+UC Davis Server Processor
+UC Davis Server
+UC Davis Server Storage (user partition)
+
+LIST OF AGENTS TO BE ADDED:
+F5 BigIP Interface Stat
+
+DISCOVER MODE:
+Lan/Wan
+RouterSwitch
+Application
+System
+
+Environment Variable:
+
+AAG Report Technology:
+Lan/Wan
+RouterSwitch
+Application
+System
+
+COMMENTS:
+It would be nice if the ""Variable not supported"" message for the ""Discards
+In"" could be removed, the ""Discards In"" can be determined by polling the
+OID sysInterfaceStatDropsIn.
+
+We have changed ""f5-lan-interface-stat.mtf"" file to fix this issue.
+
+CUSTOMER NEXT STEPS:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+170398	Radware load balancer with BWM licenses
+LIST OF AGENTS SUPPORTED:
+Radware CSD Application Server
+
+LIST OF AGENTS TO BE ADDED:
+Add new agent ""Radware BWM Statistics"" 
+
+DISCOVER MODE:
+Application
+
+ENVIRONMENT VARIABLE:
+None
+
+AAG REPORT TECHNOLOGY:
+Application
+
+COMMENTS:
+We will certify following objects in agent Radware BWM Statistics
+
+- rsBWMStatisticsBandwidthUsedLastSec
+- rsBWMStatisticsPacketNumberLastSec
+- rsBWMStatisticsBandwidthUsedLastPeriod
+- rsBWMStatisticsPacketNumberLastPeriod
+- rsBWMStatisticsGuaranteedReachedCounterLastPeriod
+- rsBWMStatisticsMaximumReachedCounterLastPeriod
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+169536	 No MIB support for report on IPLSA elements
+LIST OF AGENTS SUPPORTED:
+Response Path - PreCreated (Cisco RttMon ICMP App)
+Response Path - PreCreated(Cisco RttMonJitter OWDelay NoSize)
+Response Destination
+Response Source
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVER MODE:
+RESPONSE ELEMENTS
+
+Environment Variable:
+NH_DISCOVER_IPSLA_NO_OWNER_STRING
+
+AAG Report Technology:
+RESPONSE ELEMENTS
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below. If you already able to discover and poll the list of supported agents above, then please let us know what else you're requesting us to do.
+- Please set environment variable NH_DISCOVER_IPSLA_NO_OWNER_STRING to Yes
+
+CUSTOMER NEXT STEPS:
+If you are on eHealth 6.3.x, please download the latest maintenance pack from http://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+182773	Cisco UCM
+LIST OF AGENTS SUPPORTED:
+Cisco PGW Controller Feature
+Cisco Call Manager Global
+Host Resources NT-Server Disk Storage (hard disk)
+Host Resources Server (with virtual memory)
+Host Resources Server Storage (NT user partition)
+Host Resources Server Processor
+MIB2 (wan port) no multicast, unicast, unknown
+
+LIST OF AGENTS TO BE ADDED:
+Host Resources Running Process with Status
+Cisco Call Manager Status
+
+DISCOVER MODE:
+All Mode
+
+ENVIRONMENT VARIABLE:
+Set NH_HOST_RESOURCES_PROCESS to yes
+
+AAG REPORT TECHNOLOGY:
+All Mode
+
+COMMENTS:
+Please set environment variable NH_HOST_RESOURCES_PROCESS to yes to discover new elements.
+MIB objects are certified as below:
+- ccmStatus is certified in agent Cisco Call Manager Status 
+- ccmRegisteredPhones is certified in agent Cisco Call Manager Global
+- hrSWRunStatus is certified in agent Host Resources Running Process with Status
+- hrProcessorLoad is certified in agent Host Resources Server Processor
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+
+########################################################################################
+182775	Cisco ASA 5510
+LIST OF AGENTS SUPPORTED:
+Cisco PPPoE Session
+Cisco T1/E1 Trunk (Current active DS0)
+Cisco Router General Data Type 201
+Cisco Memory Pool
+Cisco IOS Environment (Power Supply)
+Cisco IOS Environment (Fan)
+Cisco IOS Environment (Temperature)
+Cisco Router CPU (w/Buffer,Memory)
+Cisco NetFlow Protocol
+Cisco NetFlow Export Stats
+Cisco NetFlow Cache
+Cisco IP Multicast Subsystem v12.2.35
+Cisco Flash Partition
+Cisco Flash Server
+Response Source
+Cisco EXT MIB2 ifVHCPacketGrp CRC no cieIfUtilTbl HSpeed w/Q
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+Cisco ISO Process
+Cisco ISO Process Group
+Cisco AAA Session
+
+LIST OF AGENTS TO BE ADDED:
+
+DISCOVERY MODE:
+All
+
+Environment Variable:
+None
+
+AAG REPORT TECHNOLOGY:
+LAN/WAN
+Router/Switch
+
+COMMENTS:
+- According to the list of agents supported above, it seems like this device is fully certified. Are you able to discover the list of agents above? If not, then please download the latest verification kit or maintenance pack as described below.
+- ciscoMemoryPoolUsed (1.3.6.1.4.1.9.9.48.1.1.1.5)  had been certified in agent Cisco Memory Pool
+- cpmCPUTotal5MinRev(1.3.6.1.4.1.9.9.109.1.1.1.1.8) had been certified in agent ""Cisco Router CPU (w/Buffer,Memory)"".
+- The variables: cfwHardwareStatusValue, cpmThreadCpuUtilization, cefcFRUPowerAdminStatus, entSensorStatus don't exist in the Mibdump. So, we don't certify them.
+
+CUSTOMER'S NEXT STEP:
+If you are on eHealth 6.3.x, please download the latest maintenance pack fromhttp://support.ca.com , install it, and test the certification.
+If you are on eHealth 6.2.x or 6.1.x, please download the latest verification kit from http://ehealth-spectrum.ca.com/support/secure/certkits/ , install it, and test the certification.
+Send the testing results to us through the ticket system.
+
+########################################################################################
+142594	Enterasys Networks, Inc. Matrix N Standalone Platinum Rev 05.42.04 - 21177351
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data Type 201 (v2c)
+MIB2 (wan port) with 64 bit counters, v2c
+MIB2 WAN (v1/HighSpeed) errors, octets, unknown only (v2c)
+MIB2 full duplex Ethernet w/DOT3 /v2c
+MIB2 WAN (v2c/HighSpeed/>640M)
+MIB2 (wan port)/v2c
+
+LIST OF AGENTS TO BE ADDED:
+Enterasys Secure Stack Switch CPU (only memory) (v2c)
+Enterasys Secure Stack Switch CPU (utilization) (v2c)
+Change agent MIB2 full duplex Ethernet w/DOT3 /v2c into MIB2 full duplex Ethernet w/DOT3 /v2c /hs
+
+DISCOVERY MODE:
+Lan/Wan
+Router/Switch
+
+ENVIRONMENT VARIABLE:
+set evironment variable NH_DISCOVER_SNMPv2c_ONLY to yes
+
+AAG REPORT TECHNOLOGY:
+Lan/Wan
+Router/Switch
+
+COMMENTS:
+- Certify new CPU to fix the issue
+- Change agent ""MIB2 full duplex Ethernet w/DOT3 /v2c"" into ""MIB2 full duplex Ethernet w/DOT3 /v2c /hs""to fix gap problem
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+161144	AD/Exchange phase3 certification for ADES AIM 12.7 - Client Access Role
+LIST OF AGENTS SUPPORTED:
+Microsoft Exchange AD Hub Trans DB Inst
+Microsoft Exchange AD HubTransExt
+Microsoft Exchange AD Hub Trans General Performance
+Microsoft Exchange AD Hub Transport Role
+Microsoft Exchange AD Logical Disk
+Microsoft Exchange AD Mailbox General Performance
+Microsoft Exchange AD Mailbox Role
+Microsoft Exchange AD MBAccCach
+Microsoft Exchange AD MBAccDomCtrl
+Microsoft Exchange AD MBAccProc
+Microsoft Exchange AD MBAssist
+Microsoft Exchange AD MBDB
+Microsoft Exchange AD MBDBInst
+Microsoft Exchange AD MBIsClient
+Microsoft Exchange AD MBIsMB
+Microsoft Exchange AD MBMailSub
+Microsoft Exchange AD MBRep
+Microsoft Exchange AD MBRepSeeder
+Microsoft Exchange AD MBSearchInd
+Microsoft Exchange AD MBStoreIf
+Microsoft Exchange AD NTDS Performance
+Microsoft Exchange AD Physical Disk
+
+LIST OF AGENTS TO BE ADDED:
+Microsoft Exchange AD ClientAccess
+Microsoft Exchange AD ClntAccessAB
+Microsoft Exchange AD ClntAccessActSync
+Microsoft Exchange AD ClntAccessAspNet
+Microsoft Exchange AD ClntAccessAvailServ
+Microsoft Exchange AD ClntAccessCP
+Microsoft Exchange AD ClntAccessOAB
+Microsoft Exchange AD ClntAccessOwa
+Microsoft Exchange AD ClntAccessRpcClntAccess
+Microsoft Exchange AD ClntAccessRpcHttpPxy
+
+PATCH DEPENDENT?
+Yes, please install the bundled cert kit.
+
+DISCOVER MODE:
+Application
+
+Environment Variable:
+
+AAG Report Technology:
+App Service
+
+COMMENTS:
+The new agents are planned for the May Verification Kit.
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
+########################################################################################
+159893	Switch MVR OA2000
+LIST OF AGENTS SUPPORTED:
+Generic Router/Switch Data
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>20M)
+MIB2 LAN (FullDuplex/v2c/HighSpeed/>640M)
+
+LIST OF AGENTS TO BE ADDED:
+NBASE Environment (Power Supply)
+NBASE Environment (Fan
+
+DISCOVER MODE:
+Lan/Wan
+Router/Switch
+
+Environment Variable:
+None
+
+AAG Report Technology:
+Lan/Wan
+Router/Switch
+
+PATCH DEPENDENT:
+No
+
+COMMENTS:
+- The new agents are planned for the May Verification Kit.
+
+CUSTOMER NEXT STEPS:
+- Contact to your vendor to get the Mib File
+
+########################################################################################
+182764	Cisco MCS7835
+LIST OF AGENTS SUPPORTED:
+Cisco Call Manager Global
+Host Resources ProcessSet
+Host Resources Server Disk Storage (hard disk)
+Host Resources Server (with virtual memory)
+Host Resources Server Processor
+Host Resources Server Storage (user partition)
+IBM System Environment Sensor (Fan)
+IBM System Environment Sensor (Logical Drive)
+IBM System Environment Sensor (Logical Network Adapter)
+IBM System Environment Sensor (Physical Drive)
+IBM System Environment Sensor (Physical Network Adapter)
+IBM System Environment Sensor (Power Supply)
+IBM System Environment Sensor (Temperature)
+IBM UMS Environment Sensor (Physical Adapter)
+IBM UMS Environment Sensor (Voltage)
+MIB2 (lan port) no multicast no unicast, no unknown
+
+LIST OF AGENTS TO BE ADDED:
+- set  NH_HOST_RESOURCES_PROCESS = yes  
+- NH_HOST_RESOURCES_PROCESS_CCM_ONLY = yes
+- IBM System Environment Sensor (Physical Memory)
+- IBM System Environment Sensor (Processor)
+- change agent Host Resources Running Process to Host Resources Running Process with Status
+
+DISCOVER MODE:
+Application & System & Lan/Wan
+
+ENVIRONMENT VARIABLE:
+set NH_HOST_RESOURCES_PROCESS = yes 
+NH_HOST_RESOURCES_PROCESS_CCM_ONLY = yes
+
+AAG REPORT TECHNOLOGY:
+Application & System & Lan/Wan
+
+COMMENTS:
+the following OIDs are preciously certified: 
+- ibmSystemPowerSupplyStatus (1.3.6.1.4.1.2.6.159.1.1.130.1.1.9) have been ceritified in agent ""IBM System Environment Sensor (Power Supply)"".
+- hrStorageUsed (1.3.6.1.2.1.25.2.3.1.6) have been ceritified in agent ""Host Resources Server Storage (user partition)"".
+- ccmRegisteredPhones( 1.3.6.1.4.1.9.9.156.1.5.5) have been ceritified in agent ""Cisco Call Manager Global"".
+We have certified OIDs below:
+- ibmSystemPhysicalMemoryHasError (1.3.6.1.4.1.2.6.159.1.1.120.1.1.3) in agent IBM System Environment Sensor (Physical Memory)
+- ibmSystemProcessorStatus (1.3.6.1.4.1.2.6.159.1.1.140.1.1.15) in agent System Environment Sensor (Processor)
+- hrSWRunPerfCPU(1.3.6.1.2.1.25.5.1.1.1) and  hrSWRunStatus(1.3.6.1.2.1.25.4.2.1.7)  in Host Resources Running Process with Status
+-   ccmStatus (1.3.6.1.4.1.9.9.156.1.1.2.1.5) in agent Cisco Call Manager Status
+- change agent Host Resources Running Process to Host Resources Running Process with Status
+
+CUSTOMER'S NEXT STEP:
+Test the certification once you receive the notification of kit/release availability from CA.
+
